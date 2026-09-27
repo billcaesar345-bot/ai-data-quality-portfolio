@@ -13,8 +13,17 @@ def main() -> None:
 
     issues = []
     review_count = 0
+    seen_ids = set()
 
     for row_number, row in enumerate(rows, start=2):
+        annotation_id = row.get("annotation_id", "").strip()
+        if not annotation_id:
+            issues.append(f"row {row_number}: annotation_id is empty")
+        elif annotation_id in seen_ids:
+            issues.append(f"row {row_number}: duplicate annotation_id '{annotation_id}'")
+        else:
+            seen_ids.add(annotation_id)
+
         if not row.get("text", "").strip():
             issues.append(f"row {row_number}: annotation text is empty")
         if row.get("sentiment") not in VALID_LABELS:
@@ -34,7 +43,7 @@ def main() -> None:
         for issue in issues:
             print(f"- {issue}")
     else:
-        print("Result: PASS — taxonomy and review-status checks are valid.")
+        print("Result: PASS — taxonomy, IDs, and review-status checks are valid.")
         print("Reviewer action: inspect every record marked 'needs_review' before approval.")
 
 if __name__ == "__main__":
