@@ -1,0 +1,9 @@
+record_id,category,score,review_status
+r001,search,4.5,approved
+r002,search,4.0,approved
+r003,checkout,2.0,needs_review
+r004,checkout,,approved
+r005,account,3.5,approved
+r006,account,3.5,approved
+r006,account,3.5,approved
+r007,search,5.0,needs_review

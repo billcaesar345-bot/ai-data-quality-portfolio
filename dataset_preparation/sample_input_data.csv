@@ -1,0 +1,8 @@
+example_id,text,label,confidence,source
+p1,Fast delivery and clear updates,Positive,0.94,web
+p2,The instructions were useful,neutral,0.81,email
+p3,The page did not load,NEGATIVE,0.90,app
+p3,The page did not load,NEGATIVE,0.90,app
+p4,,positive,0.85,web
+p5,Helpful support team,positive,1.30,email
+p6,The new layout is different,unknown,0.60,app

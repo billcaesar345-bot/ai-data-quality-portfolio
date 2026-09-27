@@ -1,0 +1,4 @@
+record_id,text,label,confidence,source,review_date
+1,The delivery arrived early,positive,0.95,web_form,2026-01-05
+2,The instructions were clear,neutral,0.72,email,2026-01-05
+5,Support replied quickly,positive,0.91,web_form,2026-01-06

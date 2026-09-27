@@ -1,0 +1,11 @@
+record_id,text,label,confidence,source,review_date
+1,The delivery arrived early,Positive,0.95,web-form,2026/01/05
+2,The instructions were clear,neutral,0.72,email,2026-01-05
+3,,negative,0.88,Email,05-01-2026
+4,The app keeps crashing,NEGATIVE,1.20,app,2026-01-06
+4,The app keeps crashing,NEGATIVE,1.20,app,2026-01-06
+5,Support replied quickly,positive,0.91,web form,2026-01-06
+6,The price is okay,unknown,0.65,web-form,2026-01-07
+7,Would use it again,positive,not_available,web-form,2026-01-07
+8,No response from support,negative,-0.10,email,2026-01-08
+,Easy to navigate,positive,0.83,app,2026-01-08

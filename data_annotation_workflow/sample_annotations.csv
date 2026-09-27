@@ -1,0 +1,7 @@
+annotation_id,text,sentiment,review_status
+1,The setup was quick and simple,positive,approved
+2,It works as described,neutral,approved
+3,I cannot log in after the update,negative,approved
+4,It is fine once you learn the menu,neutral,needs_review
+5,Love the new search feature,positive,approved
+6,The new design is different,neutral,needs_review
