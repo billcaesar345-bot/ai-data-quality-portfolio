@@ -14,5 +14,14 @@ This is an independent demonstration using [synthetic/example collected data](sa
 7. **Quality checks:** Review completeness, source eligibility, representativeness, label validity, and unusual records.
 8. **Final dataset:** Version the accepted records and document exclusions, assumptions, and known limitations.
 
+## Reproducible Validation
+Run:
+
+```bash
+python validate_collection.py
+```
+
+The validator checks required fields, unique collection IDs, ISO collection dates, HTTP(S) source URLs, controlled language values, and collection eligibility status. It uses only the synthetic/example CSV in this folder.
+
 ## Why Collection Quality Matters
 Poor source selection, missing provenance, duplicate records, or inconsistent fields can introduce bias, reduce coverage, and make later labels unreliable. Quality controls at collection time protect downstream AI training, evaluation, and auditability.
