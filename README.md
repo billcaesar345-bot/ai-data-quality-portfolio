@@ -7,6 +7,14 @@
 ## About
 I focus on the practical work that makes AI training data dependable: collecting structured information, applying clear labels, reviewing records, and documenting quality decisions. This portfolio shows independent, reproducible examples of data operations and quality assurance using synthetic or publicly appropriate example data.
 
+## Quick Review
+If you are reviewing this portfolio for AI/data operations work:
+1. Start with **[AI Dataset Quality Assurance](data_quality_assurance/README.md)** to see issue detection, correction/quarantine, and final validation.
+2. Review **[Data Annotation & Labeling Workflow](data_annotation_workflow/README.md)** for annotation guidelines and reviewer checks.
+3. Review **[Data Collection & Validation Workflow](data_collection_workflow/README.md)** for schema, provenance, and eligibility validation.
+4. Review **[AI Training Dataset Preparation](dataset_preparation/README.md)** for reproducible dataset preparation.
+5. Finish with **[Data Analysis & Quality Report](data_analysis_report/README.md)** for quality reporting.
+
 ## Core Skills
 - AI training data collection and data collection workflows
 - Data annotation and labeling; annotation guidelines

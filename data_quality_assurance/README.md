@@ -14,6 +14,9 @@ This independent demonstration uses **synthetic** feedback data to show a practi
 ## Run
 ```bash
 python qa_check.py
+python validate_clean_dataset.py
 ```
+
+The first script profiles the deliberately messy raw data; the second acts as a **final acceptance gate** for the cleaned dataset. This separates issue discovery from final verification, which is useful when a dataset moves through multiple QA stages.
 
 Requires Pandas from the repository-level [`requirements.txt`](../requirements.txt).
