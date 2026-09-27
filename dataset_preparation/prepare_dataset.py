@@ -18,7 +18,8 @@ def main() -> None:
     data["label"] = data["label"].str.strip().str.lower()
     data["source"] = data["source"].str.strip().str.lower()
     data["confidence"] = pd.to_numeric(data["confidence"], errors="coerce")
-    complete = data[["example_id", "text", "label", "source"]].notna().all(axis=1)
+    required_text = data[["example_id", "text", "label", "source"]].apply(lambda column: column.str.strip().ne(""))
+    complete = data[["example_id", "text", "label", "source"]].notna().all(axis=1) & required_text.all(axis=1)
     valid = complete & data["label"].isin(VALID_LABELS) & data["confidence"].between(0, 1)
     prepared = data.loc[valid].drop_duplicates(subset=["example_id"], keep="first").copy()
 
