@@ -18,5 +18,7 @@ python prepare_dataset.py
 
 The script reads [`sample_input_data.csv`](sample_input_data.csv) and writes `prepared_dataset.csv`, a local generated artifact ignored by Git.
 
+For reviewers who do not want to run Python, [`prepared_dataset_example.csv`](prepared_dataset_example.csv) shows the expected structure of the prepared output. It is a static portfolio example, not a production training dataset.
+
 ## Splitting for Evaluation
 The script assigns accepted examples to `train`, `validation`, and `test` labels deterministically to demonstrate the workflow. In a real dataset, split sizes and stratification should be chosen based on volume and label distribution, and duplicate or related records must not cross splits. Follow the [preparation checklist](preparation_checklist.md) before using data in an experiment.
