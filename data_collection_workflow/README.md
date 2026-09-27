@@ -9,7 +9,7 @@ This is an independent demonstration using [synthetic/example collected data](sa
 2. **Collection:** Capture only the approved content and required provenance fields defined in the [collection schema](collection_schema.md).
 3. **Schema validation:** Check required fields, unique IDs, date formatting, language codes, URLs, and eligibility status.
 4. **Cleaning:** Normalize predictable formatting differences while preserving the original meaning and source traceability.
-5. **Deduplication:** Detect exact and near-duplicate content so repeated examples do not distort the dataset.
+5. **Deduplication:** Check for duplicate records and content during collection QA so repeated examples do not distort the dataset. The included validator demonstrates unique collection-ID checks; near-duplicate detection would require a separate similarity method.
 6. **Labeling:** Route eligible records through written annotation guidelines and controlled labels.
 7. **Quality checks:** Review completeness, source eligibility, representativeness, label validity, and unusual records.
 8. **Final dataset:** Version the accepted records and document exclusions, assumptions, and known limitations.
