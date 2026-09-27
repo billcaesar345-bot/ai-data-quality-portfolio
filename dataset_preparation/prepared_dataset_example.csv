@@ -1,5 +1,4 @@
 example_id,text,label,confidence,source,split
-p2,The instructions were useful,neutral,0.81,email,train
-p5,Helpful support team,positive,1.0,email,validation
-p1,Fast delivery and clear updates,positive,0.94,web,test
-p3,The page did not load,negative,0.90,app,train
+p1,Fast delivery and clear updates,positive,0.94,web,train
+p2,The instructions were useful,neutral,0.81,email,validation
+p3,The page did not load,negative,0.90,app,test
