@@ -51,6 +51,38 @@ I have practical experience involving **data collection, data labeling/annotatio
 5. Run quality checks for completeness, duplicates, labels, and value ranges.
 6. Prepare versioned, reproducible datasets for analysis or model development.
 
+## QA Decision Examples
+The portfolio emphasizes making quality decisions consistently rather than silently changing questionable records.
+
+| Situation | QA decision | Reasoning |
+| --- | --- | --- |
+| Missing required field | Quarantine or send for review | The record cannot be accepted until the missing information is resolved. |
+| Invalid label | Compare against the approved taxonomy | Labels should come from a controlled vocabulary rather than being improvised. |
+| Duplicate record | Investigate before removal | A duplicate may be accidental, but it should be verified before changing the dataset. |
+| Ambiguous annotation | Escalate for review | Unclear examples should not be forced into a label simply to increase completion. |
+| Invalid confidence value | Reject or review | Confidence values should stay within the documented range. |
+| Formatting inconsistency | Normalize when unambiguous | Safe normalization improves consistency without changing the underlying meaning. |
+
+## Interview Talking Points
+Each project is designed to give a concrete example of how I approach AI data work:
+
+- **Dataset QA:** identify quality problems, distinguish safe corrections from records that need quarantine, and apply a final acceptance check.
+- **Annotation workflow:** work from a controlled label taxonomy, recognize ambiguous examples, and use reviewer checks for consistency.
+- **Dataset preparation:** validate required fields and value ranges, normalize labels, detect duplicates, and consider leakage when preparing splits.
+- **Data collection:** think about source eligibility, provenance, schema requirements, and validation before records enter the final dataset.
+- **Analysis report:** turn raw quality checks into clear findings that another reviewer can understand and act on.
+
+## Testing & Validation
+The repository uses several layers of validation:
+
+- **Python syntax:** portfolio scripts have been checked with `python -m py_compile`.
+- **Repository hygiene:** changes have been checked with `git diff --check`.
+- **Dataset validation:** project scripts include checks for required fields, controlled labels, duplicate identifiers, date/source formats, confidence ranges, and other documented rules.
+- **Documentation review:** workflows and acceptance rules are documented alongside the scripts and example datasets.
+- **Runtime note:** Pandas-based scripts require the dependencies in `requirements.txt`; runtime execution should be performed in an environment where those dependencies are installed.
+
+Static checks confirm that the Python files are syntactically valid; they are distinct from full runtime execution against every example dataset.
+
 ## Quality Assurance Approach
 Quality starts before labeling. I use explicit schemas, required fields, controlled vocabularies, and repeatable checks to surface problems early. Records that cannot be safely corrected are separated for review rather than silently changed. Clear documentation makes every decision understandable to a reviewer and supports consistent future work.
 
