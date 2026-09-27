@@ -1,0 +1,5 @@
+example_id,text,label,confidence,source,split
+p1,Fast delivery and clear updates,positive,0.94,web,train
+p2,The instructions were useful,neutral,0.81,email,validation
+p3,The page did not load,negative,0.90,app,test
+p5,Helpful support team,positive,0.85,email,train
