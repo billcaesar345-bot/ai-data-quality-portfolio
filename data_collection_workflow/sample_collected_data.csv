@@ -1,0 +1,4 @@
+collection_id,source_name,source_url,collected_date,content,language,consent_status
+c001,Example Help Center,https://example.org/help,2026-01-10,How do I reset my password?,en,documented_example
+c002,Example Help Center,https://example.org/help,2026-01-10,Where can I change my email address?,en,documented_example
+c003,Example Community,https://example.org/community,2026-01-11,The dashboard loads slowly.,en,documented_example
